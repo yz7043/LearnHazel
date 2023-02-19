@@ -41,8 +41,7 @@ namespace Hazel
 		{
 			return GetCategoryFlags() & category;
 		}
-	protected:
-		bool m_Handled = false;
+		bool Handled = false;
 	};
 
 
@@ -62,7 +61,7 @@ namespace Hazel
 				// cast the address of m_Event to a T pointer
 				// And dereference it
 				// The cast is safe only if T is of a type of 'T' or subclass of 'T'
-				m_Event.m_Handled = func(*(T*)&m_Event);
+				m_Event.Handled = func(*(T*)&m_Event);
 				return true;
 			}
 			return false;

@@ -1,7 +1,7 @@
 #include "hzpch.h"
 #include "Application.h"
 #include <glad/glad.h>
-
+#include "Input.h"
 namespace Hazel
 {
 	// Here "bind" is to bind a value to the function and generate a functio object
